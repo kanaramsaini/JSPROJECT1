@@ -1,0 +1,28 @@
+
+/* style css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#body_container{
+    height:auto;
+    border:0px solid black;
+    
+}
+#box1{
+    width: 100%;
+    height: 350px;
+    margin-top:80px;
+    margin-bottom:80px;
+    margin-left: 10px;
+     /* display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center;  */ 
+    padding:20px;
+    color: brown;
+    background-color: bisque;
+    border: 10px solid salmon;
+}
+/* end css */
+.font{color:red; font-size: 30px;}
