@@ -1,4 +1,4 @@
-function genereatBox(){
+function Method1(){
     var quotes = {
       "—Theodore Zeldin":
         "A dream is what makes people love life even when it is painful",
@@ -14,18 +14,18 @@ function genereatBox(){
   
     var authors = Object.keys(quotes);
   
-    var author = authors[Math.floor(Math.random() * authors.length)];
+    var authorr = authors[Math.floor(Math.random() * authors.length)];
   
   
-    var quote = quotes[author];
+    var quotee = quotes[authorr];
 
   
-    document.getElementById("quote").innerHTML = quote;
+    document.getElementById("quote").innerHTML = quotee;
   
-    document.getElementById("author").innerHTML = author;
+    document.getElementById("author").innerHTML =authorr;
 }
 
-function geneReat(){
+function Method2(){
   var textAuto = {
   "--John Wooden" : "If you want to achieve greatness stop asking for permission.",
   "--Anonymous" : "Things work out best for those who make the best of how things work out.", 
@@ -36,17 +36,19 @@ function geneReat(){
 
 var author= Object.keys(textAuto);
 
-var random =author[Math.floor(Math.random()*author.length)];
+var randommm =author[Math.floor(Math.random()*author.length)];
 
 
-var quote=textAuto[random];
+var quot=textAuto[randommm];
 
 
-document.getElementById("Quote").innerHTML=quote;
-document.getElementById("Author").innerHTML=random;
+document.getElementById("quote1").innerHTML=quot;
+document.getElementById("Author").innerHTML=randommm;
+
+// genereat();
 }
 
-function Genereat(){
+function Method3(){
   var functionData = {
 "paragraph(1)" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illum saepe, minima sequi pariatur incidunt aspernatur cupiditate rem. Nesciunt eum ipsam non dolorem quos. Molestias, repellendus voluptate ipsa ex animi tempore rem neque quisquam soluta laudantium et ipsam? Vero repellendus optio rerum cupiditate soluta ullam, saepe deserunt quia alias molestias.",
 "paragraph(2)" :"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum, iste consequatur veniam vel quos quo nam ducimus, aspernatur autem magnam illo error. Minima vero voluptatibus sint cumque ea, alias nulla atque tempora accusamus voluptate qui optio doloremque fuga odit autem harum dolores porro aspernatur officia. Sunt saepe sint vero." ,
@@ -59,10 +61,15 @@ function Genereat(){
   
 document.getElementById("name").innerHTML=random;
 document.getElementById("paragraph").innerHTML=Quote;
+// document.getElementById("second").innerHTML=Quote;
+// document.getElementById("third").innerHTML=Quote;
 
+// geneReat();
 }
 function Genereat3(){
-  Genereat();
-  geneReat();
-  genereat();
+  Method1();
+  Method2();
+  Method3();
+  
+ 
 }
