@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="submitButton()">
+            <label for="">Name</label><input type="text" id="TextName" onfocus="focusFunction(this)"><br><br>
+            <label for="">class</label><input type="text" id="TextClass" onfocus="focusFunction(this)"><br><br>
+            <label for="">country</label>
+            <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+               <option value="">India</option>
+               <option value="">pakistan</option>
+               <option value="">sri lanka</option>
+               <option value="">Nepal</option>
+               <option value="">Bangladesh</option>
+              
+            </select>
+            <input type="submit">
+        </form>
+    </div>
+    <script>
+        function focusFunction(element){
+           element.style.backgroundColor="red";
+        }
+        function submitButton(){
+            fname=document.getElementById('TextName').value;
+            alert("hello "+fname+" you have successfully submit");
+          
+        }
+    </script>
+</body>
+</html>
