@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Slide Images</title>
+    <style>
+        .image{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="image/image.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/image1.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/image2.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/image3.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/image4.jpg" alt="">
+        </div>
+        <i id="prev" onclick="show_image(-1)" class="fas fa-chevron-left"></i>
+        <i id="next" onclick="show_image(1)" class="fas fa-chevron-right"></i>
+      
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+        index = 0;
+            show_image(index)
+        function show_image(a){
+            index += a;
+            var images=document.getElementsByClassName('image');
+            var dotss=document.getElementsByClassName('dot');
+            for( b = 0; b < images.length; b++){
+                images[b].style.display="none";
+            }
+            for(b =0; b < dotss.length; b++){
+                dotss[b].className=dotss[b].className.replace("active","");
+            }
+            if(index >image.length -1){
+                index=0;
+            }if(index < 0){
+                index=images.length -1;
+            }
+            images[index].style.display = "block";
+             dotss[index].className += "active";
+        }
+        
+    </script>
+</body>
+</html>

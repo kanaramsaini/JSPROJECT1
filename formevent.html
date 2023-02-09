@@ -15,10 +15,10 @@
             <label for="">Name</label><input type="text" id="TextName" onfocus="focusFunction(this)"><br><br>
             <label for="">class</label><input type="text" id="TextClass" onfocus="focusFunction(this)"><br><br>
             <label for="">country</label>
-            <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <select name="" id="name" onfocus="focusFunction(this)" onselect="selectFunction()">
                <option value="">India</option>
                <option value="">pakistan</option>
-               <option value="">sri lanka</option>
+               <option value="" >sri lanka</option>
                <option value="">Nepal</option>
                <option value="">Bangladesh</option>
               
@@ -30,9 +30,13 @@
         function focusFunction(element){
            element.style.backgroundColor="red";
         }
+        function selectFunction(){
+           document.getElementById('TextName').style.backgroundColor="black"
+        }
         function submitButton(){
             fname=document.getElementById('TextName').value;
-            alert("hello "+fname+" you have successfully submit");
+            
+            alert("hello "+ fname +  " you have  successfully submit");
           
         }
     </script>
