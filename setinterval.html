@@ -38,19 +38,20 @@
   
     <br><br>
     <button onclick="button()">Download</button>
-    <button onclick="button()">Install</button>
+   
     <script>
         function button(){
             const element=document.getElementById('download');
+            
             let width=0;
             const id=setInterval(clickMove,100);
-
             function clickMove(){
                 if(width==100){
-                    clearInterval(id)
+                    clearInterval(id);
                 }else{
                     width++
                     element.style.width = width+'%'
+        
                 }
             }
         }
