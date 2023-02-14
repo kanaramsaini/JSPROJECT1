@@ -58,15 +58,25 @@ body{
     background: rgba(128,128,128, 0.1);
 }
 @media(max-width:480px){
-    .btn{
+    .button{
         width: 23.4%;
     }
     .calculator{
         border: none;
     }
+    .button{
+        font-size: small;
+    }
 }
+
 @media(max-width:320px){
-    .btn{
+    .button{
         width: 23%;
+    }
+    .calculator{
+        border: none;
+    }
+    .button{
+        font-size: small;
     }
 }
