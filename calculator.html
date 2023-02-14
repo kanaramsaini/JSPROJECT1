@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="calculatar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input id="input" placeholder="0">
+        </br>
+        <button style="color:rgb(17, 148, 148);"class="button" onclick="erase()">c</button>
+        <button style="color:rgb(17, 148, 148);" class="button" onclick="press('%')">%</button>
+        <button  style="color:rgb(17, 148, 148);" class="button" onclick="erase()">X</button>
+        <button style="color:rgb(17, 148, 148);" class="button" onclick="press('.')">.</button>
+        </br>
+            <button class="button" onclick="press(9)">9</button>
+            <button class="button" onclick="press(8)">8</button>
+            <button class="button" onclick="press(7)">7</button>
+            <button style="color:rgb(17, 148, 148);" class="button" onclick="press('*')">*</button>
+            <br>
+            
+            <button class="button" onclick="press(6)">6</button>
+            <button class="button" onclick="press(5)">5</button>
+            <button class="button" onclick="press(4)">4</button>
+            <button style="color:rgb(17, 148, 148);" class="button" onclick="press('-')">-</button>
+    </br>
+
+            <button class="button" onclick="press(3)">3</button>
+            <button class="button" onclick="press(2)">2</button>
+            <button class="button" onclick="press(1)">1</button>
+            <button style="color:rgb(17, 148, 148);" class="button" onclick="press('+')">+</button>
+</br>
+           <button class="button" onclick="press(00)"> 00</button>
+<button class="button" onclick="press(0)">0</button>
+<button class="button" onclick="equal()">=</button>
+<button style="color:rgb(17, 148, 148);" class="button" onclick="press('/')">/</button>
+
+
+
+        </div>
+    </div>
+<script>
+    const input=document.getElementById("input");
+    var clickInput="";
+    function press(num){
+        clickInput+=num;
+        input.value=clickInput;
+    }
+    function erase(){
+        clickInput="";
+        input.value=clickInput;
+    }
+    function equal(){
+        input.value=eval(clickInput);
+        clickInput="";
+    }
+</script>
+</body>
+</html>
