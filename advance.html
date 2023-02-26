@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #page1{
+            display: none;
+        }
+        #page2{
+            display: none;
+        }
+        .container .navbar .nav {
+
+            display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <button onclick="navbarButton()">click nav</button>
+        <div class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </div>
+    </div>
+</div>
+<p id="page1"  onmouseenter="onMouse(this)" onmouseleave="onmouseOut()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia voluptas consequuntur autem minus maiores repellendus dolor neque soluta similique ipsum temporibus ex totam voluptate porro praesentium animi perspiciatis tempora labore, vitae et consectetur asperiores. Esse nisi natus dolores omnis, qui illo tempora, tempore quo quae mollitia quis aut! Laborum quo cupiditate blanditiis reiciendis ea illo, molestiae autem rerum impedit?</p>
+
+
+<p id="page2" onmouseenter="onMouse(this)">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam optio maiores nihil ea incidunt recusandae illo laboriosam ab aliquam dignissimos alias fugiat vitae soluta maxime, temporibus non, quia nulla nemo. Rem optio voluptates repellendus doloribus molestias assumenda asperiores id fugiat aperiam qui. Eum magnam at aperiam! Alias necessitatibus autem quis at eum amet illo placeat ipsum saepe ut. Ducimus, accusamus eius aspernatur officia corrupti expedita?</p>
+<button  onclick="myFucntion()">page click</button>
+
+    <script>
+        // let firstName=document.getElementById('page1').innerText;
+        // let lastName=document.getElementById('page2').innerText;
+        // function myName(a,b){
+        //     return `${firstName} ${lastName}`;
+        // }
+        // var hello=`Hello ${myName(firstName,lastName)}`;
+        // document.write(hello);
+        function myFucntion(){
+            // alert("hello")
+                // return `${firstName} ${lastName}`
+                document.getElementById("page1").style.display="block";
+                document.getElementById("page2").style.display="block";
+                // // // document.getElementById('page1').style.display="bloak";
+        }
+        function onMouse(){
+           this.document.getElementById("page1").style.backgroundColor="red"
+           this.document.getElementById("page2").style.backgroundColor="pink"
+           
+        }
+        function onmouseOut(){
+          document.getElementById("page1").style.backgroundColor="none"
+           document.getElementById("page2").style.backgroundColor="none"
+        
+        }
+        function navbarButton(){
+            document.getElementsByClassName("nav").style.display="block";
+        }
+    </script>
+</body>
+</html>
