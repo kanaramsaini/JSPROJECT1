@@ -26,18 +26,27 @@
     checkIcon.className = "fas fa-check-square";
     checkIcon.style.color="red";
     checkIcon.addEventListener("click", () =>{
-        checkIcon.style.color="pink";
+        let color = checkIcon.style.color;
+        if(color=='red'){
+            checkIcon.style.color='green';
+        }
+        else{
+            
+            checkIcon.style.color='red';
+        }
+        
     });
+   
     div.appendChild(checkIcon);
    
     trashIcon.className = "fas fa-trash";
-    trashIcon.style.color="green";
+    trashIcon.style.color="red";
     trashIcon.addEventListener("click",()=>{
         item.remove();
 
     });
     div.appendChild(trashIcon);
-    
+
     item.appendChild(text);
     item.appendChild(div);
     document.querySelector("#to_do_list").appendChild(item);
@@ -45,3 +54,4 @@
     document.querySelector('#input').value = "";       
     
 }
+
