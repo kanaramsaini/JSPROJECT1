@@ -3,11 +3,12 @@
 
 /* navbar */
 
-#logo{
+/* #logo{
     font-size: 2rem;
     margin-top: 5px;
 }
 #logo a{
+   
     text-decoration: none;
     color: #fff;
     text-shadow: 2px 2px 1px #fff;
@@ -21,10 +22,10 @@
 #headar{
     color: #fff;
     background-color:rgb(71, 68, 68);
+  
    
-   
-}
-#menu{
+} */
+/* #menu{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -36,11 +37,12 @@
 }
 #menu li a{
     list-style: none;
-    color:#fff;
+    color:rgb(51, 41, 41);
     padding: 20px 15px;
     display: block;
     text-decoration: none;
     font-size: 15px;
+    display: inline;
 }
 #menu li a:hover{
     color:rgb(127, 190, 25);
@@ -52,15 +54,56 @@
 
 /* end body style */
 /* footer style */
-#footer-head{
+/* #footer-head{
     text-align: center;
     background-color:rgb(71, 68, 68);
     color:#fff;
     /* padding-bottom: 10px; */
-}
+/* }
 #footer-head h3{
     padding-top: 10px;
 }
-/* end footer style */
+end footer style */ */ */
 
-
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #208b0be5;
+    min-width: 450px;
+    height: auto;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: rgb(10, 150, 150);}
+  
+  .show {display: block;}

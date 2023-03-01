@@ -54,7 +54,7 @@
     }
     
     #to_do_list{
-        width: 800px;
+        width: 600px;
         margin: auto;
 
     }
@@ -83,5 +83,17 @@
     .item i{
         cursor: pointer;
         margin: 0 5px;
-    }
     
+    }
+    @media only screen and (min-width: 480px) {
+
+            #to_do_list{
+                width: 100%;
+            }
+    }
+    @media only screen and (min-width: 300px) {
+
+        #to_do_list{
+            width: 100%;
+        }
+    }
