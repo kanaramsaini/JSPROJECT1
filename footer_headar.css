@@ -3,8 +3,8 @@
 
 /* navbar */
 
-/* #logo{
-    font-size: 2rem;
+ #logo{
+    font-size: 3rem;
     margin-top: 5px;
 }
 #logo a{
@@ -19,19 +19,20 @@
     text-shadow: 2px 2px 1px rgb(127, 190, 25);
 }
 
-#headar{
-    color: #fff;
+.headar_top{
+    color: rgb(117, 79, 79);
+ width: 100%;
     background-color:rgb(71, 68, 68);
-  
+} 
    
-} */
-/* #menu{
+/* } 
+ #menu{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 #menu li{
-    display: inline-block;  
+     
    list-style: none;
     text-transform: capitalize;
 }
@@ -45,31 +46,31 @@
     display: inline;
 }
 #menu li a:hover{
-    color:rgb(127, 190, 25);
+    color:rgb(127, 190, 25); */
     
-}
-/* end navbar */
+/* 
+end navbar 
 
-/* body style */
+ body style 
 
-/* end body style */
-/* footer style */
-/* #footer-head{
+end body style 
+footer style  */
+ #footer-head{
     text-align: center;
     background-color:rgb(71, 68, 68);
     color:#fff;
-    /* padding-bottom: 10px; */
-/* }
+     padding-bottom: 10px; 
+}
 #footer-head h3{
     padding-top: 10px;
 }
-end footer style */ */ */
+/* end footer style  */
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color:rgb(19, 16, 16);
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -78,11 +79,12 @@ end footer style */ */ */
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #0909a7;
+    color:rgb(40, 218, 40);
   }
   
   .dropdown {
-    position: relative;
+    
     display: inline-block;
   }
   
@@ -103,7 +105,12 @@ end footer style */ */ */
     text-decoration: none;
     display: block;
   }
+  #menu li{
+     
+    list-style: none;
+     text-transform: capitalize;
+ }
   
   .dropdown a:hover {background-color: rgb(10, 150, 150);}
   
-  .show {display: block;}
+  .show {display: block; color:red;}

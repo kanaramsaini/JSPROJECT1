@@ -7,19 +7,19 @@
     <title>Sticky Notes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="sticky_style.css">
+    <link rel="stylesheet" href="timer_style.css">
     <link rel="stylesheet" href="footer_headar.css">
 </head>
 <body>
 
-        <div class="container">
+        <div class="container headar_top">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-7">
                     <h1 Id="logo"><a href="index.html">CYNTEXA</a></h1>
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-5">
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <button onclick="myFunction()" class="button"><i class="fa fa-list dropbtn"></i></button>
                     <div id="myDropdown" class="dropdown-content">
                         <ul id="menu">
                             <li><a href="index.html">home</a></li>
@@ -41,34 +41,30 @@
         </div>
        
        <!-- end headar -->
-    
-<div id="modal">
-    <div id="inner_modal">
-        <textarea id="user_input" maxlength="160" placeholder="Note..."></textarea>
-        <i class="far fa-times-circle" id="hide"></i>
-    </div>
-</div>
-
-<main>
-    <header>
-        <div class="container-fulid">
-
-
-                <div id="headers" style="background-color:grey;"><h1><i class="fas fa-sticky-note"></i>Sticky Notes</h1>
-                <button id="add_note">Create Note</button>
-          
+      
+        <div class="container container-body">
+            
+                    <div id="timer">
+                        <h1 id="timer_display">00:00:00</h1>
+                        <div id="buttons">
+                            <button id="stop_start">Stop/Start</button>
+                            
+                            <button id="reset">Reset</button>
+                          </div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="container-fluid" id="footer-head">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Copyright@2022 All Rights Reserved.</h5>
+                    <h6>  Dovelopar by Kanaram Saini</h6>
+                </div>
             </div>
         </div>
-    </header>
 
-    <section>
-        <div class="container">
-            <div id="all_notes"></div>
-        </div>
-    </section>
-</main>
-
-    <script src="sticky_script.js"></script>
+    <script src="timer_script.js"></script>
     <script src="menuscript.js"></script>
 </body>
 

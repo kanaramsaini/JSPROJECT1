@@ -1,5 +1,5 @@
-var random_margin = ["10px","10px",];
-var random_colors = ["#F9DBBB", "#9DC08B", "#865DFF", "#4T37AA", "#FF3F9E", "#16FF00","red","pink"];
+var random_margin = ["-5px","3px","8px","5px","6px","-3px"];
+var random_colors = ["#F9DBBB", "#9DC08B", "#865DFF", "#4T37AA", "#FF3F9E", "#16FF00","#54899","#85985E"];
 var random_degree = ["rotate(3deg)", "rotate(1deg)", "rotate(-1deg)", "rotate(-3deg)", "rotate(-5deg)", "rotate(-8deg)"]
 
 var index = 0;
@@ -38,7 +38,7 @@ createStickyNote = (text) => {
         index = 0;
 
     
-note.setAttribute("style",`margin:${random_margin[Math.floor(Math.random()*random_margin.length)]};background-color:${random_colors[index++]}`)
+note.setAttribute("style",`margin:${random_margin[Math.floor(Math.random()*random_margin.length)]};background-color:${random_colors[index++]};transform:${random_degree[Math.floor(Math.random() * random_degree.length)]}`)
 
 note.addEventListener("click",()=>{
     note.remove();

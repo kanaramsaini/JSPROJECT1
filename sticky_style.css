@@ -20,7 +20,7 @@ button{
 }
 
 button:hover{
-    color: white;
+    color: rgb(37, 224, 12);
     background-color: rgba(0,0,0,0.1);
     
 }
@@ -65,7 +65,7 @@ button:hover{
 }
 
 .container{
-    width: 1250px;
+    width: 100%;
     margin: auto;
 }
 #headers{
@@ -78,7 +78,7 @@ button:hover{
     justify-content:center;
     align-items: center;
 }
-#headers:hover{
+#headers h1:hover{
     color:rgb(127, 190, 25);
 }
 .fas{
