@@ -20,17 +20,17 @@
   flex-direction: column;
    justify-content: center;
  text-align: center;
-    transition: all 2s;
+    
      
  }
 .container-body #timer:hover{
-  box-shadow:6px 6px 3px #6f6668,12px 12px 3px #7f818a,12px 12px 3px #23e8a3,-6px  -6px 3px  #5fd1c9 ;
-  
+  box-shadow:6px 6px 3px #869789,-6px  -6px 3px  #869789 ;
+  transition: ease-in-out 2s;
 }
  
  #stop_start{
      font-size:40px;
-     color:#3ca735;
+     color:#39aa2e;
      margin-right:10px;
  }
  #reset{
